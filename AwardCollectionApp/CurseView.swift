@@ -37,11 +37,11 @@ struct CurseView: View {
                 )
             }
             .fill(
-            RadialGradient(
-                colors: [.white, .yellow],
-                center: .center,
-                startRadius: size * 0.05,
-                endRadius: size * 0.6)
+                RadialGradient(
+                    colors: [.white, .yellow],
+                    center: .center,
+                    startRadius: size * 0.05,
+                    endRadius: size * 0.6)
             )
             
             Path { path in

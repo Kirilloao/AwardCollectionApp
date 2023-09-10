@@ -24,11 +24,11 @@ struct MainView: View {
             }
             Spacer()
             if awardIsShowing {
-                GradientRectangles()
+                StarView()
                     .frame(width: 250, height: 250)
                     .transition(.leadingSlide)
             }
-      
+            
             Spacer()
         }
         .font(.headline)

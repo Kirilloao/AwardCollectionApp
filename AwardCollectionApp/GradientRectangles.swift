@@ -30,7 +30,6 @@ struct GradientRectangles: View {
                     .rotationEffect(.degrees(-90))
                     .opacity(0.5)
                     .scaleEffect(0.7)
-                
             }
         }
     }

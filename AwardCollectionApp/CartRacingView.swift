@@ -11,7 +11,6 @@ struct CartRacingView: View {
     
     @State private var start = false
     
-    
     var body: some View {
         HStack {
             VStack(spacing: 10) {
@@ -80,11 +79,9 @@ struct CartRacingView_Previews: PreviewProvider {
 struct CartView: View {
     
     @Binding var start: Bool
-    
     let cartTitle: String
     let color: Color
     let animation: Animation
-    
     
     var body: some View {
         VStack {
