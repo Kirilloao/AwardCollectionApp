@@ -26,7 +26,7 @@ struct MainView: View {
             if awardIsShowing {
                 StarView()
                     .frame(width: 250, height: 250)
-                    .transition(.leadingSlide)
+                    .transition(.fadeAndScale)
             }
             
             Spacer()
@@ -49,11 +49,9 @@ struct MainView_Previews: PreviewProvider {
 }
 
 extension AnyTransition {
-    static var leadingSlide: AnyTransition {
-        let insertion = AnyTransition.move(edge: .leading)
-            .combined(with: .scale)
-        let removal = AnyTransition.scale
-            .combined(with: .opacity)
+    static var fadeAndScale: AnyTransition {
+        let insertion = AnyTransition.scale(scale: 0.8).combined(with: .opacity)
+        let removal = AnyTransition.scale(scale: 1.2).combined(with: .opacity)
         return .asymmetric(insertion: insertion, removal: removal)
     }
 }
