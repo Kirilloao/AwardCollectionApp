@@ -51,6 +51,5 @@ struct MyView_Previews: PreviewProvider {
     static var previews: some View {
         StarView()
             .frame(width: 250, height: 250)
-        
     }
 }
